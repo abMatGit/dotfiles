@@ -11,10 +11,14 @@ set softtabstop=2
 set autoindent
 
 set number
+set smartcase
+set ignorecase
 
 " ============ COMMANDS ===========
 :command W w
 :command Q q
+:let mapleader = ","
+:map <Leader>t :CommandT
 vnoremap // y/<C-R>"<CR>
 
 
