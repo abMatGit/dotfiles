@@ -13,6 +13,10 @@ set autoindent
 set number
 set smartcase
 set ignorecase
+set cc=120
+
+" This will automatically remove trailing white space on every :w
+autocmd BufWritePre * :%s/\s\+$//e
 
 " ============ COMMANDS ===========
 :command W w
@@ -23,7 +27,7 @@ vnoremap // y/<C-R>"<CR>
 
 
 " ==================================== VUNDLE SETTINGS ===============================
-" 
+"
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -56,6 +60,7 @@ Plugin 'itspriddle/vim-jquery'
 Plugin 'rust-lang/rust', {'rtp': 'src/etc/vim/'}
 Plugin 'scrooloose/nerdtree'
 Plugin 'mileszs/ack.vim'
+Plugin 'ntpeters/vim-better-whitespace'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
