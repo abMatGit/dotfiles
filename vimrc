@@ -18,12 +18,28 @@ set cc=120
 " This will automatically remove trailing white space on every :w
 autocmd BufWritePre * :%s/\s\+$//e
 
+" ==================================== VIM FUNCTIONS =======================================
+"
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+" ==========================================================================================
+
 " ============ COMMANDS ===========
+"
 :command W w
 :command Q q
 :let mapleader = ","
-:map <Leader>t :CommandT
+:map <Leader>t :CommandT<CR>
+:map <Leader>r :NERDTreeToggle<CR>
+:map <Leader>f :NERDTreeFind<CR>
+:map <Leader>i :call NumberToggle()<CR>
 vnoremap // y/<C-R>"<CR>
+"=================================
 
 
 " ==================================== VUNDLE SETTINGS ===============================
