@@ -51,8 +51,13 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+#########     PATH       #########
+#
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # export MANPATH="/usr/local/man:$MANPATH"
+#
+##################################
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -86,7 +91,7 @@ mv_torrent() {
 
 brewdeps() {
   brew list | while read cask; do echo -n $fg[blue] $cask $fg[white]; brew deps $cask | awk '{printf(" %s ", $0)}'; echo ""; done
-} 
+}
 
 brewuses() {
   brew list | while read cask; do echo -n $fg[blue] $cask $fg[white]; brew uses --installed $cask | awk '{printf(" %s ", $0)}'; echo ""; done
