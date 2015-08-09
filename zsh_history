@@ -1,0 +1,17 @@
+: 1428988164:0;ls -a
+: 1428988189:0;mv .oh-my-zsh
+: 1428988197:0;mv .oh-my-zsh dotfiles
+: 1428988197:0;ls
+: 1428988199:0;ls -a
+: 1428988211:0;cd gstreame
+: 1428988216:0;cd .gstreamer-0.10
+: 1428988216:0;ls
+: 1428988222:0;cd ..
+: 1428988230:0;rm -r .gstreamer-0.10
+: 1428988242:0;ls
+: 1428988244:0;ls -a
+: 1428988260:0;mv .mpd dotfiles
+: 1428988266:0;mv .ncmpcpp dotfiles
+: 1428988266:0;ls
+: 1428988282:0;ls -a
+: 1428988291:0;mv .zsh_history dotfiles
