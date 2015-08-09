@@ -1,5 +1,6 @@
 "==================================== VIM SETTINGS ===================================
 syntax on
+syntax enable
 autocmd VimEnter * NERDTree
 setf dosini
 
@@ -9,11 +10,13 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 set autoindent
+set incsearch
+set hlsearch
 
 set number
 set smartcase
 set ignorecase
-set cc=120
+" set cc=120
 
 " This will automatically remove trailing white space on every :w
 autocmd BufWritePre * :%s/\s\+$//e
@@ -28,6 +31,7 @@ function! NumberToggle()
   endif
 endfunc
 " ==========================================================================================
+let g:CommandTMaxHeight = 10
 
 " ============ COMMANDS ===========
 "
@@ -38,6 +42,7 @@ endfunc
 :map <Leader>r :NERDTreeToggle<CR>
 :map <Leader>f :NERDTreeFind<CR>
 :map <Leader>i :call NumberToggle()<CR>
+:map <Leader>h :noh<CR>
 vnoremap // y/<C-R>"<CR>
 "=================================
 
@@ -77,6 +82,7 @@ Plugin 'rust-lang/rust', {'rtp': 'src/etc/vim/'}
 Plugin 'scrooloose/nerdtree'
 Plugin 'mileszs/ack.vim'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'kchmck/vim-coffee-script'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
