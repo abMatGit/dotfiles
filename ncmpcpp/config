@@ -77,7 +77,7 @@ visualizer_output_name = "my_fifo"
 ## Keep in mind that sane values start with >=10.
 ##
 #
-visualizer_sync_interval = "1"
+visualizer_sync_interval = "30"
 #
 ##
 ## Note: To enable spectrum frequency visualization

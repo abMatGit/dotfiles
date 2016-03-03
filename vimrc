@@ -12,6 +12,7 @@ set softtabstop=2
 set autoindent
 set incsearch
 set hlsearch
+set modifiable
 
 set number
 set smartcase
@@ -78,7 +79,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Avoid a name conflict with L9
 " Plugin 'user/L9', {'name': 'newL9'}
 Plugin 'itspriddle/vim-jquery'
-Plugin 'rust-lang/rust', {'rtp': 'src/etc/vim/'}
+Plugin 'rust-lang/rust.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mileszs/ack.vim'
 Plugin 'ntpeters/vim-better-whitespace'
