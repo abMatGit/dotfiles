@@ -2144,3 +2144,135 @@ Consider increasing the value for the 'analyzeduration' and 'probesize' options
 May 19 01:52 : ffmpeg/flac: Could not find codec parameters for stream 0 (Audio: flac, 0 channels): unspecified sample format
 Consider increasing the value for the 'analyzeduration' and 'probesize' options
 May 19 01:58 : player: played "Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/08 Burnt.mp3"
+Oct 10 10:19 : main: inotify: auto_update was disabled. enable during compilation phase
+Oct 10 10:19 : server_socket: bind to '0.0.0.0:8000' failed: Address already in use (continuing anyway, because binding to '[::]:8000' succeeded)
+Oct 10 10:54 : main: inotify: auto_update was disabled. enable during compilation phase
+Oct 10 10:54 : server_socket: bind to '0.0.0.0:8000' failed: Address already in use (continuing anyway, because binding to '[::]:8000' succeeded)
+Oct 10 10:55 : client: [0] opened from [::1]:60657
+Oct 10 10:56 : client: [0] closed
+Oct 10 10:57 : main: inotify: auto_update was disabled. enable during compilation phase
+Oct 10 10:57 : server_socket: bind to '0.0.0.0:8000' failed: Address already in use (continuing anyway, because binding to '[::]:8000' succeeded)
+Oct 10 10:57 : client: [0] opened from [::1]:60667
+Oct 10 10:57 : client: [0] closed
+Oct 10 10:59 : main: inotify: auto_update was disabled. enable during compilation phase
+Oct 10 10:59 : server_socket: bind to '0.0.0.0:8000' failed: Address already in use (continuing anyway, because binding to '[::]:8000' succeeded)
+Oct 10 10:59 : client: [0] opened from [::1]:60764
+Oct 29 19:15 : main: inotify: auto_update was disabled. enable during compilation phase
+Oct 29 19:15 : server_socket: bind to '0.0.0.0:8000' failed: Address already in use (continuing anyway, because binding to '[::]:8000' succeeded)
+Oct 29 19:15 : client: [0] opened from 127.0.0.1:57019
+Oct 29 19:15 : ffmpeg/mp3: Skipping 0 bytes of junk at 1519.
+2015-10-29 19:15:41.892 mpd[58733:945835] 19:15:41.891 WARNING:  140: This application, or a library it uses, is using the deprecated Carbon Component Manager for hosting Audio Units. Support for this will be removed in a future release. Also, this makes the host incompatible with version 3 audio units. Please transition to the API's in AudioComponent.h.
+Nov 22 18:30 : player: played "Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/04 Swayed.mp3"
+Nov 22 18:30 : errno: Failed to open "/Volumes/exHDD/Music/Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/03 Looped.mp3": No such file or directory
+Nov 22 18:30 : player: played "Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/03 Looped.mp3"
+Nov 22 18:30 : errno: Failed to open "/Volumes/exHDD/Music/Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/04 Swayed.mp3": No such file or directory
+Nov 22 18:30 : player: played "Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/04 Swayed.mp3"
+Nov 22 18:30 : errno: Failed to open "/Volumes/exHDD/Music/Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/06 Dragged.mp3": No such file or directory
+Nov 22 18:30 : player: played "Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/06 Dragged.mp3"
+Nov 22 18:30 : errno: Failed to open "/Volumes/exHDD/Music/Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/05 Thrown.mp3": No such file or directory
+Nov 22 18:30 : player: played "Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/05 Thrown.mp3"
+Nov 22 18:30 : errno: Failed to open "/Volumes/exHDD/Music/Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/07 Bent.mp3": No such file or directory
+Nov 22 18:30 : player: played "Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/07 Bent.mp3"
+Nov 22 18:30 : errno: Failed to open "/Volumes/exHDD/Music/Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/08 Burnt.mp3": No such file or directory
+Nov 22 18:30 : player: played "Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/08 Burnt.mp3"
+Nov 22 18:30 : errno: Failed to open "/Volumes/exHDD/Music/Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/01 Lit.mp3": No such file or directory
+Nov 22 18:30 : player: played "Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/01 Lit.mp3"
+Nov 22 18:30 : errno: Failed to open "/Volumes/exHDD/Music/Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/02 Held.mp3": No such file or directory
+Nov 22 18:30 : player: played "Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/02 Held.mp3"
+Nov 22 18:30 : errno: Failed to open "/Volumes/exHDD/Music/Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/03 Looped.mp3": No such file or directory
+Nov 22 18:30 : player: played "Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/03 Looped.mp3"
+Nov 22 18:30 : errno: Failed to open "/Volumes/exHDD/Music/Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/04 Swayed.mp3": No such file or directory
+Nov 22 18:30 : player: played "Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/04 Swayed.mp3"
+Nov 22 18:30 : errno: Failed to open "/Volumes/exHDD/Music/Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/06 Dragged.mp3": No such file or directory
+Nov 22 18:30 : player: played "Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/06 Dragged.mp3"
+Nov 22 18:30 : errno: Failed to open "/Volumes/exHDD/Music/Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/05 Thrown.mp3": No such file or directory
+Nov 22 18:30 : player: played "Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/05 Thrown.mp3"
+Nov 22 18:30 : errno: Failed to open "/Volumes/exHDD/Music/Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/07 Bent.mp3": No such file or directory
+Nov 22 18:30 : player: played "Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/07 Bent.mp3"
+Nov 22 18:30 : errno: Failed to open "/Volumes/exHDD/Music/Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/08 Burnt.mp3": No such file or directory
+Nov 22 18:30 : player: played "Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/08 Burnt.mp3"
+Nov 22 18:31 : ffmpeg/mp3: Skipping 0 bytes of junk at 1513.
+2015-11-22 18:31:57.804 mpd[58733:945835] 18:31:57.804 WARNING:  140: This application, or a library it uses, is using the deprecated Carbon Component Manager for hosting Audio Units. Support for this will be removed in a future release. Also, this makes the host incompatible with version 3 audio units. Please transition to the API's in AudioComponent.h.
+Nov 22 18:37 : ffmpeg/mp3: Skipping 0 bytes of junk at 1515.
+Nov 22 18:38 : player: played "Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/01 Lit.mp3"
+Nov 22 18:42 : ffmpeg/mp3: Skipping 0 bytes of junk at 1519.
+Nov 22 18:43 : player: played "Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/02 Held.mp3"
+Nov 22 18:48 : ffmpeg/mp3: Skipping 0 bytes of junk at 1519.
+Nov 22 18:49 : player: played "Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/03 Looped.mp3"
+Nov 22 18:53 : ffmpeg/mp3: Skipping 0 bytes of junk at 1521.
+Nov 22 18:53 : player: played "Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/04 Swayed.mp3"
+Nov 22 18:58 : ffmpeg/mp3: Skipping 0 bytes of junk at 1519.
+Nov 22 18:58 : player: played "Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/06 Dragged.mp3"
+Nov 22 19:06 : ffmpeg/mp3: Skipping 0 bytes of junk at 1515.
+Nov 22 19:07 : player: played "Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/05 Thrown.mp3"
+Nov 22 19:12 : ffmpeg/mp3: Skipping 0 bytes of junk at 1517.
+Nov 22 19:13 : player: played "Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/07 Bent.mp3"
+Nov 22 19:22 : player: played "Kiasmos - Kiasmos (2014) [LAME MP3 (320)]/08 Burnt.mp3"
+Nov 22 19:24 : ffmpeg/mp3: Skipping 0 bytes of junk at 53302.
+2015-11-22 19:24:54.308 mpd[58733:945835] 19:24:54.308 WARNING:  140: This application, or a library it uses, is using the deprecated Carbon Component Manager for hosting Audio Units. Support for this will be removed in a future release. Also, this makes the host incompatible with version 3 audio units. Please transition to the API's in AudioComponent.h.
+Nov 22 19:28 : player: played "Jungle - Jungle [2014]/01. The Heat.mp3"
+Nov 22 19:31 : ffmpeg/mp3: Skipping 0 bytes of junk at 53302.
+2015-11-22 19:31:50.941 mpd[58733:945835] 19:31:50.941 WARNING:  140: This application, or a library it uses, is using the deprecated Carbon Component Manager for hosting Audio Units. Support for this will be removed in a future release. Also, this makes the host incompatible with version 3 audio units. Please transition to the API's in AudioComponent.h.
+Nov 22 19:35 : player: played "Jungle - Jungle [2014]/01. The Heat.mp3"
+Nov 22 19:41 : ffmpeg/mp3: Skipping 0 bytes of junk at 53302.
+2015-11-22 19:41:18.185 mpd[58733:945835] 19:41:18.185 WARNING:  140: This application, or a library it uses, is using the deprecated Carbon Component Manager for hosting Audio Units. Support for this will be removed in a future release. Also, this makes the host incompatible with version 3 audio units. Please transition to the API's in AudioComponent.h.
+Nov 22 19:44 : player: played "Jungle - Jungle [2014]/01. The Heat.mp3"
+Nov 22 19:47 : ffmpeg/mp3: Skipping 0 bytes of junk at 53302.
+2015-11-22 19:47:07.712 mpd[58733:945835] 19:47:07.711 WARNING:  140: This application, or a library it uses, is using the deprecated Carbon Component Manager for hosting Audio Units. Support for this will be removed in a future release. Also, this makes the host incompatible with version 3 audio units. Please transition to the API's in AudioComponent.h.
+Nov 22 19:47 : player: played "Jungle - Jungle [2014]/01. The Heat.mp3"
+Nov 22 19:47 : ffmpeg/mp3: Skipping 0 bytes of junk at 53291.
+Nov 22 19:47 : player: played "Jungle - Jungle [2014]/02. Accelerate.mp3"
+Nov 22 19:47 : ffmpeg/mp3: Skipping 0 bytes of junk at 53295.
+Nov 22 19:47 : player: played "Jungle - Jungle [2014]/03. Busy Earnin'.mp3"
+Nov 22 19:47 : ffmpeg/mp3: Skipping 0 bytes of junk at 53285.
+Nov 22 19:47 : player: played "Jungle - Jungle [2014]/04. Platoon.mp3"
+Nov 22 19:47 : ffmpeg/mp3: Skipping 0 bytes of junk at 53281.
+Nov 22 19:47 : player: played "Jungle - Jungle [2014]/05. Drops.mp3"
+Nov 22 19:47 : ffmpeg/mp3: Skipping 0 bytes of junk at 53279.
+Nov 22 19:47 : player: played "Jungle - Jungle [2014]/06. Time.mp3"
+Nov 22 19:47 : ffmpeg/mp3: Skipping 0 bytes of junk at 53299.
+Nov 22 19:47 : player: played "Jungle - Jungle [2014]/07. Smoking Pixels.mp3"
+Nov 22 19:47 : ffmpeg/mp3: Skipping 0 bytes of junk at 53281.
+Nov 22 19:47 : player: played "Jungle - Jungle [2014]/08. Julia.mp3"
+Nov 22 19:47 : ffmpeg/mp3: Skipping 0 bytes of junk at 53287.
+Nov 22 19:47 : player: played "Jungle - Jungle [2014]/09. Crumbler.mp3"
+Nov 22 19:47 : ffmpeg/mp3: Skipping 0 bytes of junk at 53297.
+Nov 22 19:47 : player: played "Jungle - Jungle [2014]/10. Son Of A Gun.mp3"
+Nov 22 19:47 : ffmpeg/mp3: Skipping 0 bytes of junk at 53319.
+Nov 22 19:47 : player: played "Jungle - Jungle [2014]/11. Lucky I Got What I Want.mp3"
+Nov 22 19:47 : ffmpeg/mp3: Skipping 0 bytes of junk at 53299.
+Nov 22 19:47 : player: played "Jungle - Jungle [2014]/12. Lemonade Lake.mp3"
+Nov 22 19:47 : ffmpeg/mp3: Skipping 0 bytes of junk at 53302.
+Nov 22 19:50 : player: played "Jungle - Jungle [2014]/01. The Heat.mp3"
+Nov 22 19:55 : ffmpeg/mp3: Skipping 0 bytes of junk at 53302.
+2015-11-22 19:55:05.177 mpd[58733:945835] 19:55:05.177 WARNING:  140: This application, or a library it uses, is using the deprecated Carbon Component Manager for hosting Audio Units. Support for this will be removed in a future release. Also, this makes the host incompatible with version 3 audio units. Please transition to the API's in AudioComponent.h.
+Nov 22 19:57 : ffmpeg/mp3: Skipping 0 bytes of junk at 53291.
+Nov 22 19:58 : player: played "Jungle - Jungle [2014]/01. The Heat.mp3"
+Nov 22 20:00 : ffmpeg/mp3: Skipping 0 bytes of junk at 53295.
+Nov 22 20:01 : player: played "Jungle - Jungle [2014]/02. Accelerate.mp3"
+Nov 22 20:03 : ffmpeg/mp3: Skipping 0 bytes of junk at 53285.
+Nov 22 20:04 : player: played "Jungle - Jungle [2014]/03. Busy Earnin'.mp3"
+Nov 22 20:07 : ffmpeg/mp3: Skipping 0 bytes of junk at 53281.
+Nov 22 20:07 : player: played "Jungle - Jungle [2014]/04. Platoon.mp3"
+Nov 22 20:09 : ffmpeg/mp3: Skipping 0 bytes of junk at 53279.
+Nov 22 20:10 : player: played "Jungle - Jungle [2014]/05. Drops.mp3"
+Nov 22 20:13 : ffmpeg/mp3: Skipping 0 bytes of junk at 53299.
+Nov 22 20:13 : player: played "Jungle - Jungle [2014]/06. Time.mp3"
+Nov 22 20:15 : ffmpeg/mp3: Skipping 0 bytes of junk at 53281.
+Nov 22 20:15 : player: played "Jungle - Jungle [2014]/07. Smoking Pixels.mp3"
+Nov 22 20:18 : ffmpeg/mp3: Skipping 0 bytes of junk at 53287.
+Nov 22 20:18 : player: played "Jungle - Jungle [2014]/08. Julia.mp3"
+Nov 22 20:21 : ffmpeg/mp3: Skipping 0 bytes of junk at 53297.
+Nov 22 20:21 : player: played "Jungle - Jungle [2014]/09. Crumbler.mp3"
+Nov 22 20:24 : ffmpeg/mp3: Skipping 0 bytes of junk at 53319.
+Nov 22 20:24 : player: played "Jungle - Jungle [2014]/10. Son Of A Gun.mp3"
+Nov 22 20:28 : ffmpeg/mp3: Skipping 0 bytes of junk at 53299.
+Nov 22 20:29 : player: played "Jungle - Jungle [2014]/11. Lucky I Got What I Want.mp3"
+Nov 22 20:33 : player: played "Jungle - Jungle [2014]/12. Lemonade Lake.mp3"
+Nov 22 20:54 : ffmpeg/mp3: Skipping 0 bytes of junk at 53302.
+2015-11-22 20:54:31.208 mpd[58733:945835] 20:54:31.208 WARNING:  140: This application, or a library it uses, is using the deprecated Carbon Component Manager for hosting Audio Units. Support for this will be removed in a future release. Also, this makes the host incompatible with version 3 audio units. Please transition to the API's in AudioComponent.h.
+Nov 22 20:57 : ffmpeg/mp3: Skipping 0 bytes of junk at 53291.
+Nov 22 20:57 : player: played "Jungle - Jungle [2014]/01. The Heat.mp3"
+Nov 22 21:00 : ffmpeg/mp3: Skipping 0 bytes of junk at 53295.
+Nov 22 21:00 : player: played "Jungle - Jungle [2014]/02. Accelerate.mp3"
+Nov 27 18:36 : client: [0] closed
