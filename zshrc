@@ -45,9 +45,10 @@ ZSH_THEME="aMatNebirhos"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew-cask brew gem osx)
+plugins=(git brew-cask brew gem osx zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # User configuration
 
@@ -84,10 +85,9 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-mv_torrent() {
-  GO_FLEX_TORRENT_PATH=/"Volumes/GoFlex Home Personal/Torrent Downloads/Torrents"
-  mv "$1" $GO_FLEX_TORRENT_PATH
-}
+# ZSH ENVIRONMENT VARIABLES
+ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
+
 
 brewdeps() {
   brew list | while read cask; do echo -n $fg[blue] $cask $fg[white]; brew deps $cask | awk '{printf(" %s ", $0)}'; echo ""; done
