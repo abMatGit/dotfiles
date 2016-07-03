@@ -4,3 +4,4 @@ mpd/mpd.pid
 mpd/mpd.db
 mpd/mpdstate
 ncmpcpp/*.log
+oh-my-zsh/
