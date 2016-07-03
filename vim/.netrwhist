@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/Users/aMat/.mpd'
 let g:netrw_dirhist_2='/Users/aMat/dotfiles'
 let g:netrw_dirhist_3='/Users/aMat/dotfiles/ncmpcpp'
@@ -7,3 +7,4 @@ let g:netrw_dirhist_4='/Users/aMat/.mpd'
 let g:netrw_dirhist_5='/Users/aMat/.ncmpcpp'
 let g:netrw_dirhist_6='/Users/aMat/dotfiles/vim/bundle/command-t'
 let g:netrw_dirhist_7='/Users/aMat/.config'
+let g:netrw_dirhist_8='/Users/aMat/dotfiles/.git'
