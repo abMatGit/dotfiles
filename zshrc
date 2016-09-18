@@ -54,11 +54,16 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #########     PATH       #########
 #
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:./node_modules/.bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 #
 ##################################
+
+############# EXPORT #############
+
+# export CURL_CA_BUNDLE to point to a certificate for pip installations
+export CURL_CA_BUNDLE="/etc/openssl/cert.pem"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
