@@ -5,11 +5,11 @@ autocmd VimEnter * NERDTree
 setf dosini
 
 set paste
+set autoindent
 set noswapfile
 set expandtab
 set shiftwidth=2
 set softtabstop=2
-set autoindent
 set incsearch
 set hlsearch
 set modifiable
@@ -39,7 +39,8 @@ let g:CommandTMaxHeight = 10
 :command W w
 :command Q q
 :let mapleader = ","
-:map <Leader>t :CommandT<CR>
+:let g:ackprg = "ag --nogroup --nocolor --column --ignore '*.log'"
+:map <Leader>t :CtrlP<CR>
 :map <Leader>r :NERDTreeToggle<CR>
 :map <Leader>f :NERDTreeFind<CR>
 :map <Leader>i :call NumberToggle()<CR>
@@ -47,6 +48,12 @@ let g:CommandTMaxHeight = 10
 vnoremap // y/<C-R>"<CR>
 "=================================
 
+" =================== GIT GUTTER ==============
+let g:gitgutter_sign_removed = '<<'
+let g:gitgutter_sign_added = '>>'
+let g:gitgutter_sign_modified = '<>'
+let g:gitgutter_sign_modified_removed = '><'
+"==============================================
 
 " ==================================== VUNDLE SETTINGS ===============================
 "
@@ -70,7 +77,7 @@ Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 " Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
+" Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
 " Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
@@ -82,9 +89,34 @@ Plugin 'itspriddle/vim-jquery'
 Plugin 'rust-lang/rust.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mileszs/ack.vim'
+Plugin 'rking/ag.vim'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'scrooloose/syntastic'
+Plugin 'rails.vim'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'ctrlp.vim'
+Plugin 'flazz/vim-colorschemes'
+
+" ================ CTRL P SETTINGS ===============
+
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_match_window = 'max:15,results:15'
+let g:ctrlp_root_markers = ['.ctrlp']
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\.yardoc$|\public$\|\bundle$\|\tmp$',
+  \ 'file': '\.exe$\|\.so$\|\.dat$'
+  \ }
+
+let g:ctrlp_user_command = 'ag %s --nocolor --smart-case --nogroup --hidden
+      \ --ignore .git
+      \ --ignore .svn
+      \ --ignore .DS_Store
+      \ --ignore "**/*.swf"
+      \ --ignore "**/*.png"
+      \ --ignore "**/*.log"
+      \ --ignore bundle
+      \ -g ""'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -102,3 +134,5 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 " ===========================================================================================
 
+" ====================== COLORSCHEMES  =========================
+colorscheme molokai
