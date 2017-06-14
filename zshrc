@@ -62,9 +62,6 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:./node_modules/.bin"
 
 ############# EXPORT #############
 
-# export CURL_CA_BUNDLE to point to a certificate for pip installations
-export CURL_CA_BUNDLE="/etc/openssl/cert.pem"
-
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
