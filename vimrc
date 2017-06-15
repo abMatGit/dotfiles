@@ -46,6 +46,8 @@ let g:CommandTMaxHeight = 10
 :map <Leader>i :call NumberToggle()<CR>
 :map <Leader>h :noh<CR>
 vnoremap // y/<C-R>"<CR>
+xnoremap <Leader>a y:Ack <C-r>=fnameescape(@")<CR><CR>
+xnoremap <Leader>c :w !pbcopy<CR><CR>
 "=================================
 
 " =================== GIT GUTTER ==============
@@ -97,6 +99,11 @@ Plugin 'elixir-lang/vim-elixir'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ctrlp.vim'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'tomlion/vim-solidity'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'elmcast/elm-vim'
+Plugin 'hiukkanen/vim-hamlc'
 
 " ================ CTRL P SETTINGS ===============
 
