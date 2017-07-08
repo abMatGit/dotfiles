@@ -52,10 +52,13 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # User configuration
 
-#########     PATH       #########
+#########  ------------ PATH ---------- #########
 #
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:./node_modules/.bin"
+export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.rbenv/shims:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 #
 ##################################
@@ -78,6 +81,8 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:./node_modules/.bin"
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+export EDITOR='vim'
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -86,6 +91,9 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:./node_modules/.bin"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# ---------- PRE-COMMAND RUNS ----------
+eval "$(rbenv init -)"
 
 # ZSH ENVIRONMENT VARIABLES
 ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
@@ -102,3 +110,7 @@ brewuses() {
 alias L="cd ~/workspace/git-repos/"
 alias ls="ls -G -l"
 alias mpv="mpv $1 -cache=20000"
+
+# ------------------------- WORKSPACE THINGS ---------------------------
+alias cdrails="cd ~/workspace/lumos_rails"
+
