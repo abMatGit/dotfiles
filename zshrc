@@ -114,3 +114,5 @@ alias mpv="mpv $1 -cache=20000"
 # ------------------------- WORKSPACE THINGS ---------------------------
 alias cdrails="cd ~/workspace/lumos_rails"
 
+# ------------------------- HOME THINGS -------------------------
+alias twitch="livestreamer --http-header Client-ID=ewvlchtxgqq88ru9gmfp1gmyt6h2b93 $1 $2"
