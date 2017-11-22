@@ -98,7 +98,6 @@ eval "$(rbenv init -)"
 # ZSH ENVIRONMENT VARIABLES
 ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
 
-
 brewdeps() {
   brew list | while read cask; do echo -n $fg[blue] $cask $fg[white]; brew deps $cask | awk '{printf(" %s ", $0)}'; echo ""; done
 }
@@ -107,12 +106,40 @@ brewuses() {
   brew list | while read cask; do echo -n $fg[blue] $cask $fg[white]; brew uses --installed $cask | awk '{printf(" %s ", $0)}'; echo ""; done
 }
 
+show_running_ports() {
+  lsof -iTCP -sTCP:LISTEN
+}
+
 alias L="cd ~/workspace/git-repos/"
 alias ls="ls -G -l"
 alias mpv="mpv $1 -cache=20000"
+alias vim="nvim"
 
 # ------------------------- WORKSPACE THINGS ---------------------------
 alias cdrails="cd ~/workspace/lumos_rails"
+export SHOP_SCHEMA_LOADED="true"
+source <(kubectl completion zsh)
+
+# -------------------------- KUBECTL ALIAS SETTINGS ---------------------
+alias k=kubectl
+alias kcu='kubectl config use-context' # kcu <context name>
+alias kcc='kubectl config current-context'
+# List all Nodes
+alias kgn="kubectl-1.6 get nodes --output=wide --sort-by='.metadata.labels.kubernetes\.io\/role' -L kubernetes.io/role -L lumoslabs.com/workload"
+# List all Pods
+alias kgpa="kubectl-1.6 get pods --all-namespaces --output=wide --sort-by='.metadata.namespace'"
+alias kgp="kubectl-1.6 get pods --output=wide --sort-by='.metadata.namespace'"
+# List all Deployments
+alias kgd="kubectl-1.6 get deployments --all-namespaces --output=wide --sort-by='.metadata.namespace'"
+# List all Services
+alias kgs="kubectl-1.6 get services --all-namespaces --output=wide --sort-by='.metadata.namespace'"
+# List all Ingresses
+alias kgi="kubectl-1.6 get ingress --all-namespaces --output=wide --sort-by='.metadata.namespace'"
+# Exec into the pod
+kexec() {
+  kubectl exec -it $1 -- /bin/bash
+}
 
 # ------------------------- HOME THINGS -------------------------
 alias twitch="livestreamer --http-header Client-ID=ewvlchtxgqq88ru9gmfp1gmyt6h2b93 $1 $2"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

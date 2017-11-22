@@ -1,4 +1,5 @@
 "==================================== VIM SETTINGS ===================================
+filetype plugin indent on
 syntax on
 syntax enable
 autocmd VimEnter * NERDTree
@@ -13,6 +14,7 @@ set softtabstop=2
 set incsearch
 set hlsearch
 set modifiable
+set ruler
 
 set number
 set smartcase
@@ -31,11 +33,30 @@ function! NumberToggle()
     set relativenumber
   endif
 endfunc
+
+function! Tab_Or_Complete()
+  if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
+    return "\<C-N>"
+  else
+    return "\<Tab>"
+  endif
+endfunction
 " ==========================================================================================
+" ==================================== VIM AUTOCOMMANDS =======================================
+"
+aug CSV_Editing
+    au!
+    au BufRead,BufWritePost *.csv :%ArrangeColumn
+    au BufWritePre *.csv :%UnArrangeColumn
+aug end
+
+" =============================== PLUGIN VARIABLES ==========================================
 let g:CommandTMaxHeight = 10
+let g:csv_autocmd_arrange = 1
+let g:csv_autocmd_arrange_size = 1024*1024 "1 MB size
 
 " ============ COMMANDS ===========
-"
+
 :command W w
 :command Q q
 :let mapleader = ","
@@ -48,6 +69,7 @@ let g:CommandTMaxHeight = 10
 vnoremap // y/<C-R>"<CR>
 xnoremap <Leader>a y:Ack <C-r>=fnameescape(@")<CR><CR>
 xnoremap <Leader>c :w !pbcopy<CR><CR>
+:inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 "=================================
 
 " =================== GIT GUTTER ==============
@@ -104,6 +126,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'elmcast/elm-vim'
 Plugin 'hiukkanen/vim-hamlc'
+Plugin 'csv.vim'
 
 " ================ CTRL P SETTINGS ===============
 
