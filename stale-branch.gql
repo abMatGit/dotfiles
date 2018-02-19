@@ -1,0 +1,21 @@
+query stalePullRequest($owner: String!, $name: String!, $cursor: String) {
+  repository(owner: $owner, name: $name){
+    pullRequests(states: MERGED, last: 100, before: $cursor){
+      pageInfo {
+        hasNextPage
+        hasPreviousPage
+        endCursor
+        startCursor
+      }
+      nodes {
+        headRefName
+        author {
+          login
+        }
+        headRef {
+          id
+        }
+      }
+    }
+  }
+}
