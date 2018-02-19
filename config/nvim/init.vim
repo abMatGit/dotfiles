@@ -18,7 +18,7 @@ set number
 set guicursor=
 set foldenable
 set foldmethod=syntax
-set foldlevelstart=4
+set foldlevelstart=20
 "--------------------------------------------------------------------------
 
 " ---------------------------------- PLUGINS ------------------------------
@@ -43,11 +43,12 @@ endif
   Plug 'flazz/vim-colorschemes'
   Plug 'hiukkanen/vim-hamlc', { 'for': 'hamlc' }
   Plug 'sheerun/vim-polyglot'
+  Plug 'jparise/vim-graphql'
 call plug#end()
 "--------------------------------------------------------------------------
 "
 "--------------------------- NEO MAKE SETTINGS ----------------------------
-if has("neomake")
+if has("nvim")
   " When reading a buffer (after 1s), and when writing.
   call neomake#configure#automake('rw', 1000)
 end
