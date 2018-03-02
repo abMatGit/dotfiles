@@ -62,7 +62,7 @@ export PATH="$HOME/.rbenv/shims:$PATH"
 #
 ##################################
 
-############# EXPORT #############
+############# EXPORTS #############
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -81,6 +81,7 @@ export PATH="$HOME/.rbenv/shims:$PATH"
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 export EDITOR='nvim'
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
