@@ -5,3 +5,5 @@ mpd/mpd.db
 mpd/mpdstate
 ncmpcpp/*.log
 oh-my-zsh/
+vim/plugged/
+config/nvim/.netrwhist

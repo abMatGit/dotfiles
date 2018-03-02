@@ -44,13 +44,14 @@ endif
   Plug 'hiukkanen/vim-hamlc', { 'for': 'hamlc' }
   Plug 'sheerun/vim-polyglot'
   Plug 'jparise/vim-graphql'
+  Plug 'tpope/vim-commentary'
 call plug#end()
 "--------------------------------------------------------------------------
 "
 "--------------------------- NEO MAKE SETTINGS ----------------------------
 if has("nvim")
   " When reading a buffer (after 1s), and when writing.
-  call neomake#configure#automake('rw', 1000)
+  call neomake#configure#automake('rw', 100)
 end
 "--------------------------------------------------------------------------
 
