@@ -71,9 +71,14 @@ let g:gitgutter_sign_removed = '<<'
 let g:gitgutter_sign_added = '>>'
 let g:gitgutter_sign_modified = '<>'
 let g:gitgutter_sign_modified_removed = '><'
+
+" Set fzf file searching to 20% of the window
 let g:fzf_layout = { 'down': '~20%' }
+
+" I'm not entirely sure what deoplete is for
 let g:deoplete#enable_at_startup = 1
 
+" Javascript colouring
 let g:js_context_colors_enabled = 0
 let g:js_context_colors_highlight_function_names = 1
 let g:js_context_colors_show_error_message = 1
