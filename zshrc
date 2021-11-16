@@ -45,7 +45,7 @@ ZSH_THEME="aMatNebirhos"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew-cask brew gem osx)
+plugins=(git brew gem macos)
 
 source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -116,29 +116,7 @@ alias mpv="mpv $1 -cache=20000"
 alias vim="nvim"
 
 # ------------------------- WORKSPACE THINGS ---------------------------
-alias cdrails="cd ~/workspace/lumos_rails"
-export SHOP_SCHEMA_LOADED="true"
-source <(kubectl completion zsh)
-
-# -------------------------- KUBECTL ALIAS SETTINGS ---------------------
-alias k=kubectl
-alias kcu='kubectl config use-context' # kcu <context name>
-alias kcc='kubectl config current-context'
-# List all Nodes
-alias kgn="kubectl-1.6 get nodes --output=wide --sort-by='.metadata.labels.kubernetes\.io\/role' -L kubernetes.io/role -L lumoslabs.com/workload"
-# List all Pods
-alias kgpa="kubectl-1.6 get pods --all-namespaces --output=wide --sort-by='.metadata.namespace'"
-alias kgp="kubectl-1.6 get pods --output=wide --sort-by='.metadata.namespace'"
-# List all Deployments
-alias kgd="kubectl-1.6 get deployments --all-namespaces --output=wide --sort-by='.metadata.namespace'"
-# List all Services
-alias kgs="kubectl-1.6 get services --all-namespaces --output=wide --sort-by='.metadata.namespace'"
-# List all Ingresses
-alias kgi="kubectl-1.6 get ingress --all-namespaces --output=wide --sort-by='.metadata.namespace'"
-# Exec into the pod
-kexec() {
-  kubectl exec -it $1 -- /bin/bash
-}
+alias cdrails="cd ~/workspace/basilisk"
 
 # ------------------------- HOME THINGS -------------------------
 alias twitch="livestreamer --http-header Client-ID=ewvlchtxgqq88ru9gmfp1gmyt6h2b93 $1 $2"
