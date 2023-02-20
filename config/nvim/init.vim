@@ -27,24 +27,28 @@ if has("nvim")
 else
   call plug#begin('~/.vim/plugged')
 endif
-  if has("nvim")
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-    Plug 'neovim/node-host'
-    Plug 'neomake/neomake'
-  endif
-  Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-  Plug 'mileszs/ack.vim', { 'on': 'Ack' }
-  Plug 'rking/ag.vim', { 'on': 'Ack' }
-  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-  Plug 'ntpeters/vim-better-whitespace'
-  Plug 'tpope/vim-rails'
-  Plug 'tpope/vim-fugitive'
-  Plug 'airblade/vim-gitgutter'
-  Plug 'flazz/vim-colorschemes'
-  Plug 'hiukkanen/vim-hamlc', { 'for': 'hamlc' }
-  Plug 'sheerun/vim-polyglot'
-  Plug 'jparise/vim-graphql'
-  Plug 'tpope/vim-commentary'
+
+if has("nvim")
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  Plug 'neovim/node-host'
+  Plug 'neomake/neomake'
+  Plug 'mhinz/vim-signify'
+endif
+
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'mileszs/ack.vim', { 'on': 'Ack' }
+Plug 'rking/ag.vim', { 'on': 'Ack' }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-fugitive'
+Plug 'flazz/vim-colorschemes'
+Plug 'hiukkanen/vim-hamlc', { 'for': 'hamlc' }
+Plug 'sheerun/vim-polyglot'
+Plug 'jparise/vim-graphql'
+Plug 'tpope/vim-commentary'
+Plug 'ngmy/vim-rubocop'
+Plug 'yasuhiroki/github-actions-yaml.vim'
 call plug#end()
 "--------------------------------------------------------------------------
 "
@@ -82,6 +86,7 @@ let g:deoplete#enable_at_startup = 1
 let g:js_context_colors_enabled = 0
 let g:js_context_colors_highlight_function_names = 1
 let g:js_context_colors_show_error_message = 1
+let g:vimrubocop_config = '~/workspace/basilisk/.rubocop.yml'
 "------------------------------------------------------------------------- CUSTOM COMMANDS ----------------------------
 :command W w
 :command Q q

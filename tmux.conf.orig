@@ -1,7 +1,5 @@
 ########################## MOUSE SETTINGS #################################
 set -g mouse on
-set -g default-terminal "xterm-256color"
-set-window-option -g xterm-keys on
 
 #  --------- followed https://bbs.archlinux.org/viewtopic.php?id=204091 for mouse set up ------------
 bind -n WheelUpPane   select-pane -t= \; copy-mode -e \; send-keys -M
@@ -13,8 +11,6 @@ bind -n C-WheelDownPane select-pane -t= \;               send-keys -M
 set -g prefix C-a
 
 # set window toggling
-#unbind C-Left
-#unbind C-Right
 bind -n C-Left previous-window
 bind -n C-Right next-window
 
@@ -32,6 +28,9 @@ set -g escape-time 10
 bind r source-file ~/.tmux.conf\; display "Reloaded"
 
 # active window title colors
+set-window-option -g window-status-current-fg colour132 #red
+set-window-option -g window-status-current-bg default
+set-window-option -g window-status-current-attr bright
 set-window-option -g allow-rename off
 
 # keep current path when creating new windows or panes
@@ -48,19 +47,21 @@ set -g status-right "$BATTERY_STATUS$UTC_DATE$REGULAR_DATE"
 set -g status-right-length 50
 
 # ------------------- COLOURS  ------------------------
-#set -g default-terminal "screen-256color"
+set -g default-terminal "screen-256color"
 
 # set colors for the active window
 # START:activewindowstatuscolor
-set -g pane-border-style fg=blue
-set -g pane-active-border-style bg=default,fg=yellow
+set -g pane-border-fg blue
+set -g pane-active-border-bg default
+set -g pane-active-border-fg yellow
 
 # setw -g window-status-current-attr default
 # END:activewindowstatuscolor
-setw -g status-style bg=colour235
-setw -g window-status-current-style fg=colour132,bg=default,bright,fg=black,bg=blue
+setw -g status-bg colour235
+setw -g window-status-current-fg black
+setw -g window-status-current-bg blue
 setw -g window-status-format "#I:#W |"
-setw -g window-status-style fg=colour245
+setw -g window-status-fg colour245
 setw -g window-status-current-format " ▶ #I:#W #P "
 
 # -------------- COPY / PASTE ---------------------

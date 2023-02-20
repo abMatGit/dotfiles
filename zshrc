@@ -117,6 +117,25 @@ alias vim="nvim"
 
 # ------------------------- WORKSPACE THINGS ---------------------------
 alias cdrails="cd ~/workspace/basilisk"
+alias av="aws-vault exec amat-dev -- "
+
+function aptible_login() {
+  aptible login --email=andy.matuszewski@hingehealth.com --lifetime=7d --password=$(lpass show --url aptible.com --password)
+}
+
+function aws_login() {
+  aws-vault exec $(aws-vault list | fzf | awk '{print $1}')
+}
+
+function fbd() {
+  git branch | fzf | xargs git branch -D
+}
+
+# ------------------------- SECURITY THINGS  ---------------------------
+# Storing secrets through macos keychain: https://reyes.im/blog/2020-09-18-how-to-keep-your-environment-variables-safe/
+export GITHUB_ACCESS_TOKEN=$(security find-generic-password -s "GITHUB_ACCESS_TOKEN" -w amat.keychain-db)
+export BUNDLE_GEMS__CONTRIBSYS__COM=$(security find-generic-password -s "BUNDLE_GEMS__CONTRIBSYS__COM" -w amat.keychain-db)
+export BUNDLE_RUBYGEMS__PKG__GITHUB__COM="_:${GITHUB_ACCESS_TOKEN}"
 
 # ------------------------- HOME THINGS -------------------------
 alias twitch="livestreamer --http-header Client-ID=ewvlchtxgqq88ru9gmfp1gmyt6h2b93 $1 $2"
